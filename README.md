@@ -1,70 +1,44 @@
-# 🛡️ TWAuthenticator
-Удобный и безопасный десктопный клиент для генерации TOTP-кодов.
+# TWAuthenticator
 
-📝 1. Что за программа?
-TWAuthenticator — это легкое, быстрое и современное приложение для генерации одноразовых кодов двухфакторной аутентификации (2FA) прямо на твоем рабочем столе.
+TWAuthenticator — это десктопное приложение для генерации одноразовых кодов двухфакторной аутентификации (TOTP). Программа позволяет создавать и хранить коды 2FA непосредственно на компьютере, избавляя от необходимости использовать мобильное устройство при входе в аккаунты.
 
-Забудь о необходимости постоянно искать телефон, чтобы войти в аккаунт — теперь все твои коды надежно хранятся на ПК.
+### Основные возможности
 
-🚀 2. Что делает?
-Генерация TOTP: Создает стандартные 6-значные коды, совместимые с Google Authenticator, Яндекс.Ключом и другими сервисами.
+* Генерация TOTP: Создание стандартных 6-значных кодов, полностью совместимых с Google Authenticator, Яндекс.Ключом и другими популярными сервисами.
+* Буфер обмена: Копирование кода в буфер обмена одним кликом для быстрой авторизации.
+* Безопасность: Локальное хранение данных с использованием шифрования и возможность установки PIN-кода для защиты доступа к приложению.
+* Интерфейс: Поддержка нескольких тем оформления и переключение между русским и английским языками.
+* Индикация времени: Визуальный таймер, отображающий время жизни текущего кода.
 
-Быстрое копирование: Один клик по коду — и он уже в буфере обмена.
+### Как установить
 
-Безопасность: Локальное хранение ключей, шифрование данных и возможность установки PIN-кода на запуск приложения.
+1. Перейдите в раздел **Releases** в этом репозитории.
+2. Скачайте актуальный файл установщика (TWAuthenticatorSetup.exe).
+3. Запустите файл и следуйте инструкциям мастера установки.
+4. Программа автоматически создаст ярлык на рабочем столе.
 
-Кастомизация: Выбор тем оформления (Dark, Light, Green, Purple) и поддержка русского/английского языков.
+### Как пользоваться
 
-Наглядность: Визуальный индикатор времени жизни кода.
+1. Откройте приложение через ярлык на рабочем столе.
+2. Нажмите кнопку добавления аккаунта (+), введите название сервиса и вставьте секретный ключ, полученный при настройке 2FA.
+3. Нажмите на нужный код для его копирования в буфер обмена.
+4. Используйте меню аккаунта (три точки) для изменения или удаления данных.
+5. Перейдите в настройки (иконка шестеренки) для изменения темы оформления, языка или установки PIN-кода.
 
-📥 3. Как установить?
-Перейди в раздел Releases этого репозитория.
+### Стек технологий
 
-Скачай последний файл TWAuthenticatorSetup.exe.
+* Язык программирования: Python
+* Графический интерфейс: CustomTkinter
+* Логика генерации кодов: PyOTP
 
-Запусти установщик и следуй простым инструкциям на экране.
+**Важно:** Сохраняйте секретные ключи в надежном месте. При потере доступа к компьютеру и отсутствии копий ключей восстановить доступ к учетным записям будет невозможно.
 
-Программа автоматически создаст ярлык на рабочем столе.
+---
 
-💡 4. Как использовать?
-Добавление аккаунта: Нажми кнопку + в главном меню.
+### English Summary
 
-Ввод данных: Укажи название сервиса и вставь секретный ключ (который ты получил при настройке 2FA в личном кабинете сервиса).
+**TWAuthenticator** is a secure desktop client for generating TOTP 2FA codes. It allows users to store and manage authentication keys locally on their PC, providing a fast and convenient way to log into accounts without a mobile device.
 
-Копирование: Просто кликни по нужному коду, и он скопируется в буфер.
+**Features:** TOTP generation (compatible with standard services), one-click copy to clipboard, local data encryption, optional PIN protection, and customizable themes.
 
-Управление: Нажми на троеточие ⋮ рядом с аккаунтом, чтобы изменить или удалить его.
-
-Настройки: Используй иконку шестеренки ⚙, чтобы сменить тему, язык или установить PIN-код.
-
-🛠 Стек технологий
-Language: Python
-
-GUI: CustomTkinter
-
-Logic: PyOTP
-
-Важно: Всегда сохраняйте свои секретные ключи в надежном месте! В случае потери доступа к компьютеру, без секретных ключей восстановить доступ к 2FA будет невозможно.
-
-------------------------------------------------------------------------------------------------------
-
- English Description
-TWAuthenticator is a lightweight and secure desktop client for generating TOTP 2FA codes directly on your PC.
-
-Key Features:
-TOTP Generation: Compatible with Google Authenticator, Yandex, and other services.
-
-Smart Copy: One-click copy to clipboard.
-
-Security: Local data storage with optional PIN protection.
-
-Customization: Choose your favorite theme (Dark, Light, Green, Purple) and language (RU/EN).
-
-How to use:
-Add Account: Click the + button.
-
-Setup: Enter the service name and the secret key from your 2FA settings.
-
-Copy: Click on any code to copy it instantly.
-
-Settings: Open the gear icon ⚙ to change the theme, language, or set a PIN.
+**Installation & Usage:** Download the installer from the **Releases** tab and follow the setup wizard. Add accounts by entering the service name and secret key, then click on any code to copy it to the clipboard. Use the settings menu to configure themes, language, or PIN protection.
